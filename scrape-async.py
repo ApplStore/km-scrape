@@ -1,5 +1,6 @@
 import asyncio
 import aiohttp
+import json
 
 async def fetch_data(session, url, headers):
     async with session.get(url, headers=headers) as response:
